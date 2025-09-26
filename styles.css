@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "Idroid";
+  src: url("fontes/idroid.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #84e1ad;
+}
+
+.cabecalho {
+  margin: 0px;
+  padding: 10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-image: linear-gradient(#32f389, #32cf74, #24a158, #196d3c);
+}
+
+.cabecalho h1 {
+  padding: 10px 20px 20px 20px;
+  font-size: 25px;
+}
+
+.cabecalho p {
+  padding-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.cabecalho nav {
+  display: flex;
+  gap: 20px;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.cabecalho nav a {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.cabecalho nav a:hover {
+  color: #6aff6a;
+}
+
+#titulo-principal {
+  padding: 10px 0px;
+  font-family: "Idroid", sans-serif;
+  color: #196d3c;
+  font-size: 20px;
+}
+
+.subtitulos {
+  font-family: "Idroid", sans-serif;
+  color: #196d3c;
+  font-size: 18px;
+  text-indent: 10px;
+  background-image: linear-gradient(
+    to left,
+    #4af09518,
+    #4ff09273,
+    #2cc76c4f,
+    #22a35841
+  );
+}
+
+.texto {
+  padding: 10px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  text-indent: 20px;
+  font-size: 14px;
+}
+
+.texto a {
+  color: #21854a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.texto a:hover {
+  color: #27cf27;
+}
+
+.texto strong {
+  color: #196d3c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.corpo {
+  margin: 0px 130px;
+  padding: 10px 20px;
+  background-color: #ffffffff;
+  box-shadow: 2px 2px 10px 2px #0000001a;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#bugdroid {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  height: auto;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 130px;
+  padding: 20px;
+  background-color: #1a5c38;
+  box-shadow: 2px 2px 10px 2px #0000001a;
+}
+
+.video iframe {
+  width: 100%;
+  height: 315px;
+}
+
+#quer-aprender {
+  margin: 0px;
+  padding: 10px;
+  font-size: 10px;
+  text-indent: 5px;
+  color: white;
+  background-color: #2fa866;
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 2px 2px 10px 2px #0000001a;
+}
+
+#lista-em-caixa {
+  margin: 0px 130px;
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  border-radius: 0px 0px 5px 5px;
+}
+
+#lista {
+  margin: 0px;
+  padding: 0px 10px 0px 0px;
+  background-color: #c5ebd6;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 2px 2px 10px 2px #0000001a;
+}
+
+#lista p {
+  margin: 0px 10px;
+  padding: 10px 0px;
+  line-height: 20px;
+  font-size: 14px;
+  text-indent: 20px;
+}
+
+#lista #paragrafo-separar1 p {
+  padding-bottom: 0px;
+}
+
+#lista #paragrafo-separar2 p {
+  padding-top: 0px;
+}
+
+#lista p a {
+  color: #196d3c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#lista p a:hover {
+  color: #27cf27;
+}
+/*fiz com IA esse pedaço kkkk*/
+#lista ul {
+  font-size: 15px;
+  columns: 2; /* divide a lista em 2 colunas */
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style: none; /* remove os marcadores padrão */
+}
+
+#lista ul li {
+  font-size: 14px;
+  margin: 5px 15px;
+  padding-left: 12px; /* espaço para o check */
+  position: relative;
+}
+
+#lista ul li::before {
+  content: "✔"; /* ícone de check */
+  color: #2fa866;
+  position: absolute;
+  left: 0px; /* encosta na borda esquerda */
+}
+
+abbr[title] {
+  text-decoration: none; /* remove o pontilhado */
+  cursor: help; /* opcional, tira a mãozinha */
+}
+/*fiz com IA esse pedaço kkkk*/
+footer {
+  margin: 10px 0px 0px 0px;
+  padding: 5px 0px;
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  background-color: #1a5c38;
+}
+/*n lembro disso na aula*/
+@media (max-width: 768px) {
+  .corpo,
+  .video,
+  #lista-em-caixa {
+    margin: 0px 10px; /* margem lateral menor */
+    padding: 10px; /* mantém um espaçamento interno confortável */
+  }
+}
+
+@media (max-width: 480px) {
+  .corpo,
+  .video,
+  #lista-em-caixa {
+    margin: 0px 5px; /* margem mínima em celulares pequenos */
+    padding: 5px;
+  }
+}
